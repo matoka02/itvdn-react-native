@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, Text, View } from 'react-native';
+
+import StyleSheetComponent from './components/StyleSheetComponent';
+import FlexboxExample from './components/FlexboxExample';
+import DimensionComponent from './components/DimensionComponent';
+import StandartStilization from './components/StandartStilization';
+import FlexboxActiveExample from './components/FlexboxActiveExample';
+
+import styles from './App.styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+      <Text style={styles.textTitle}>Lesson 05</Text>
+      
+      {/* <StyleSheetComponent /> */}
+
+      {/* <FlexboxExample /> */}
+
+      {/* <DimensionComponent /> */}
+
+      <StandartStilization />
+      
+      <FlexboxActiveExample /> 
+
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
