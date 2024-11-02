@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, Text, View } from 'react-native';
+
+import MyFlatList from './components/MyFlatList';
+import MySectionList from './components/MySectionList';
+import MyListComponent from './components/MyListComponent';
+
+import styles from './App.styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+      <Text style={styles.textTitle}>Hello, UUID!</Text>
+      
+      {/* <MyFlatList /> */}
+
+      {/* <View style={{ marginTop: 20 }}>
+        <MySectionList />
+      </View> */}
+
+      <View style={{ marginTop: 20, paddingHorizontal: 20 }}>
+        <MyListComponent />
+      </View>
+
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
