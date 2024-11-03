@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, View, Text } from 'react-native';
+
+import FetchComponent from './components/FetchComponent';
+import AxiosComponent from './components/AxiosComponent';
+
+import styles from './App.styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+      <View>
+        <Text style={styles.title}>Lesson 16</Text>
+        {/* <FetchComponent /> */}
+        <AxiosComponent />
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

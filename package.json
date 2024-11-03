@@ -13,6 +13,7 @@
     "@expo/metro-config": "^0.18.11",
     "@expo/metro-runtime": "^3.2.3",
     "@react-native-picker/picker": "^2.7.5",
+    "axios": "^1.7.7",
     "expo": "~51.0.28",
     "expo-status-bar": "~1.12.1",
     "expo-web-browser": "^13.0.3",
