@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, View, Text } from 'react-native';
+
+import MyFormComponent from './components/MyFormComponent';
+import SwitchComponent from './components/SwitchComponent';
+import RangeSliderComponent from './components/RangeSliderComponent';
+import PickerComponent from './components/PickerComponent';
+
+import styles from './App.styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+      <View>
+        <Text style={styles.title}>Lesson 13</Text>
+
+          {/* <MyFormComponent /> */}
+          {/* <SwitchComponent /> */}
+          {/* <RangeSliderComponent /> */}
+          <PickerComponent />
+          
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
