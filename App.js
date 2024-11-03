@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, View, Text } from 'react-native';
+
+import AsyncStorageComponent from './components/AsyncStorageComponent';
+import AsyncStorageExample1 from './components/AsyncStorageExample1';
+import AsyncStorageExample2 from './components/AsyncStorageExample2';
+
+import styles from './App.styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+      <View>
+        <Text style={styles.title}>Lesson 17</Text>
+        {/* <AsyncStorageComponent /> */}
+        {/* <AsyncStorageExample1 /> */}
+        <AsyncStorageExample2 />
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
