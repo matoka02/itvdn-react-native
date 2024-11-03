@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, View, Text } from 'react-native';
+
+import AudioPlayerComponent from './components/AudioPlayerComponent';
+import AudioRecorderComponent from './components/AudioRecorderComponent';
+import VideoPlayerComponent from './components/VideoPlayerComponent';
+import CameraComponent from './components/CameraComponent';
+
+import styles from './App.styles';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+      <View>
+        <Text style={styles.title}>Lesson 15</Text>
+
+        {/* <AudioPlayerComponent /> */}
+        {/* <AudioRecorderComponent /> */}
+        {/* <VideoPlayerComponent /> */}
+        <CameraComponent />
+
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
