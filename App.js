@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// Now App.js is no longer the root file of our application
+// because we changed main start point in package.json
+// "main": "node_modules/expo/AppEntry.js" ❌
+// "main": "expo-router/entry" ✅
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// import { SafeAreaView, View, Text } from "react-native";
+// import styles from "./App.styles";
+//
+// export default function App() {
+//     return (
+//         <SafeAreaView style={styles.mainContainer}>
+//             <View>
+//                 <Text style={styles.title}>Lesson 12 | Expo Routing</Text>
+//
+//             </View>
+//         </SafeAreaView>
+//     );
+// };
