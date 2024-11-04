@@ -11,17 +11,40 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "//ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.neprostostas.lesson18"
+    },
+    "//android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.neprostostas.lesson18",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a335acd5-58ae-47c2-a1a4-359d8d71c68e"
+      }
     },
     "android": {
+      "package": "com.tessa02.itvdnreactnative.lesson018",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "ios": {
+      "bundleIdentifier": "com.tessa02.itvdnreactnative.lesson018",
+      "supportsTablet": true
     }
   }
 }
