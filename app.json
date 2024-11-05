@@ -2,6 +2,8 @@
   "expo": {
     "name": "itvdn-react-native",
     "slug": "itvdn-react-native",
+    "owner": "tessa02",
+    "description": "The weather application will provide users with real-time weather information, forecasts, and other weather-related data, which can help them make better decisions about their day-to-day activities.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,17 +13,33 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "//android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tessa02.itvdnreactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "useClassicUpdates": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a335acd5-58ae-47c2-a1a4-359d8d71c68e"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.tessa02.itvdnreactnative",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.tessa.itvdnreactnative.lesson020"
     }
   }
 }
