@@ -1,0 +1,16 @@
+export const translations = {
+  en: { language: 'English', welcome: 'Hello', name: 'Charlie' },
+  ja: { language: 'Japanese', welcome: 'こんにちは', name: 'チャーリー' },
+  es: { language: 'Spanish', welcome: 'Hola', name: 'Carlos' },
+  fr: { language: 'French', welcome: 'Bonjour', name: 'Charles' },
+  de: { language: 'German', welcome: 'Hallo', name: 'Karl' },
+  it: { language: 'Italian', welcome: 'Ciao', name: 'Carlo' },
+  ko: { language: 'Korean', welcome: '안녕하세요', name: '찰리' },
+  zh: { language: 'Chinese', welcome: '你好', name: '查理' },
+  nl: { language: 'Dutch', welcome: 'Hallo', name: 'Karel' },
+  sv: { language: 'Swedish', welcome: 'Hej', name: 'Karl' },
+  no: { language: 'Norwegian', welcome: 'Hei', name: 'Karl' },
+  da: { language: 'Danish', welcome: 'Hej', name: 'Karl' },
+  fi: { language: 'Finnish', welcome: 'Hei', name: 'Kaarlo' },
+  pl: { language: 'Polish', welcome: 'Cześć', name: 'Karol' },
+};
